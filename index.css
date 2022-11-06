@@ -1,0 +1,90 @@
+
+*{
+    font-weight: 100;
+}
+h1{
+    color: rgba(63, 60, 151, 0.819);
+    text-align:center;
+}
+h2{
+    color: rgba(114, 112, 171, 0.819);
+    text-align: center;
+}
+h3{
+    color: rgba(36, 31, 175, 0.819);
+    text-align: left;
+    margin-left: 10%;
+    font-weight:bold;
+}
+h5{
+    color: rgba(163, 162, 165, 1);
+    text-align: center;
+}
+body{
+    background-color:#edf0ee55;
+}
+
+
+
+table.selector-table {
+    border: 2px solid #aedbdb88;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+table.selector-table tr{
+    border: 2px solid #aedbdb88;
+    border-collapse: collapse;
+}
+table.selector-table td{
+    border: 2px solid #aedbdb88;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+table.selector-table th{
+    border: 2px solid #aedbdb88;
+    border-collapse: collapse;
+}
+table.selector-table tr:hover {background-color: #aedbdb77;}
+
+table.chaining-table {
+    border: 2px solid #db709388;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+table.chaining-table tr{
+    border: 2px solid #db709388;
+    border-collapse: collapse;
+}
+table.chaining-table td{
+    border: 2px solid #db709388;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+table.chaining-table th{
+    border: 2px solid  #db709388;
+    border-collapse: collapse;
+}
+table.chaining-table tr:hover {background-color: #db709377;}
+
+.code.selector{
+    color:rgb(26, 63, 37);
+    background-color:#b8decb;
+    font-family: monospace;
+}
+
+th td{
+    padding: 15px;
+}
+th{
+    font-weight: bold;
+}
+
+.code.chaining{
+    color:rgb(26, 63, 37);
+    background-color:#c06ca533;
+    font-family: monospace;
+}

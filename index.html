@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="index.css" rel="stylesheet">
+    </head>
 
+
+    <body> 
+        <h1>Jessica's Personal Cheatsheet</h1>
+        <h2>CSS Selectors and Specificity</h2>
+        <h5>-Selectors are sometimes called tag name or element selector</h5>
+        <div>
+            <h3>Types of Selectors</h3>
+            <table class="selector-table">
+                <!--Table headings-->
+                <thead class="selector-table">
+                    <tr>
+                    <th>Syntax</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Example</th></tr>
+                </thead>
+                <tbody class="selector-table">
+                    <!-- universal selector-->
+                    <tr>
+                        <td><span class="code selector">*</span></td>
+                        <td>universal selector</td>
+                        <td>selects all elements of any type</td>
+                        <td>* {color: red;}</td>
+                    </tr>
+                    <!-- class-->
+                    <tr>
+                        <td><span class="code selector">.class</span></td>
+                        <td>Class</td>
+                        <td>selects all elements with class name </td>
+                        <td>&lt;h1 class="green bold"&gt <br>note: space between classes</td>
+                    </tr>
+                    <!-- ID-->
+                    <tr>
+                        <td><span class="code selector">#id</span></td>
+                        <td>ID</td>
+                        <td>Can only have a single value and only used once per page<br> overrides types & classes</td>
+                        <td>&lt;h1 id="large-title"&gt</td>
+                    </tr>
+                    <!-- Attribute selector-->
+                    <tr>
+                        <td><span class="code selector">[attribute]</span></td>
+                        <td>attribute selector</td>
+                        <td>can be used t target HTML elements that already contain attributes.<br> allows elements of the same type to be targeted differently by attribute or attribute value</td>
+                        <td>img[src*="winter"] selects all images with "winter" in the source name</td>
+                    </tr>
+                    <!-- Pseudo-class-->
+                    <tr>
+                        <td><span class="code selector">:focus<br>:visited<br>:disabled<br>:active</span></td>
+                        <td>pseudo-class</td>
+                        <td>changes appearance of elements based on user interactions</td>
+                        <td>a:hover{orange} turns all anchor elements orange on hover <br> -note no space between "a" and ""hover"</td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+        <div>
+            <h3>Chaining</h3>
+            <table class="chaining-table">
+                <!--Table headings-->
+                <tr>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                </tr>
+                <!-- Multiple values in HTML element -->
+                <tr>
+                    <td><span class="code chaining">&lt;div class= value1 value2 value3&gt; &lt;/div&gt;</span></td>
+                    <td>some HTML attributes can have multple values, separated by a space</td>
+                </tr>
+                <!-- h1.special-->
+                <tr>
+                    <td><span class="code chaining">h1.special <br>(no space)</span></td>
+                    <td>Selects only &lt;h1&gt; elements with a class of special. If a &lt;p&gt; also had a class of special, this rule would not style it</td>
+                </tr>
+                <!-- h1, h2-->
+                <tr>
+                    <td><span class="code chaining">h1, h2 <br> (comma, space)</span></td>
+                    <td>selects all &lt;h1&gt; and &lt;h2&gt; elements</td>
+                </tr>
+                <!-- .main-list li-->
+                <tr>
+                    <td><span class="code chaining">.main-list li <br> (space, no comma)</span></td>
+                    <td>selects all &lt;li&gt; elements under main-list class</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>
